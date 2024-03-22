@@ -45,50 +45,69 @@
 .container_btn{
     display: none;
 }
-@media only screen and (max-width:752px) {
-    .container_sb{
-        color:#FFFFFF;
-        font-size: 20px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    .container_btn{
-    width: 100px;
-    height: 50px;
-    color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    border: 1px solid grey;
-  }
-  .container_pages_li{
+
+// header end
+// resposive start
+@media only screen and (max-width: 768px) {
+   .container_pages_li{
     display: none;
-  }
-  .container{
+   }
+   .container{
+    width: 100%;
+    position: absolute;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 600px;
     height: 72px;
-    padding: 0 30px;
+    padding: 0 10px;
+    z-index: 1;
+    margin-left: 50px;
 }
-#hero{
-   
-    background-color: #FFFFFF;
+.container_btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    gap: 5px;
+    font-weight: bold;
+
 }
-}
-@media only screen and (max-width:359px) {
-    
-    .hero_cb_img_h1{
-        color: #FFFFFF;
-        font-size: 10px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+
+
+  }
+  @media only screen and (max-width: 320px) {
+    .container_pages_li{
+     display: none;
     }
-    .hero_cb_img_span{
-        color: #FFFFFF;
-        font-size: 16px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+    .container{
+     width: 100%;
+     position: absolute;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 250px;
+     height: 72px;
+     padding: 0 10px;
+     z-index: 1;
+     margin-left: 40px;
+ }
+ .container_btn{
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     width: 80px;
+     height: 40px;
+     gap: 5px;
+     font-weight: bold;
+ 
+ }
 }
-// header end
+// responsive end
